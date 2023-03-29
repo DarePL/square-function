@@ -46,7 +46,6 @@ function drawCanvas() {
     ctx.closePath();
     ctx.stroke();
   }
-
   ctx.fillStyle = "black";
   ctx.font = "3px Georgia";
 
