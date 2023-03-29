@@ -98,8 +98,6 @@ function squareFunctionJava() {
   let a = document.getElementById("a").value;
   let b = document.getElementById("b").value;
   let c = document.getElementById("c").value;
-  console.log(a + " " + b + "" + c);
-
 
   $("#results").html('');
 
