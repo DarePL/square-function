@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wykres funkcji</title>
+  <link rel="stylesheet" href="styl.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</head>
+
+<body>
+  <header id="hader">
+    <h1>Wykres funkcji kwadratowej</h1>
+  </header>
+
+  <main>
+    <section id="leftWindow" class="left">
+      <h4> Wprowadź 3 liczby i kliknij "oblicz":</h4>
+      Podaj a: <input type="number" id="a" value="0"><br>
+      Podaj b: <input type="number" id="b" value="0"><br>
+      Podaj c: <input type="number" id="c" value="0"><br>
+      <input class="button" type="button" value="oblicz w JS" onclick="squareFunction()"><br>
+      <input class="button" type="button" value="oblicz w JAVA" onclick="squareFunctionJava()"><br>
+      <span id="results"></span>
+    </section>
+    <section id="rightWindow" class="right">
+      <section class="functionName">
+        <h3>f(x)=ax<sup>2</sup>+bx+c</h3>
+      </section>
+
+      <canvas id="chart"></canvas>
+    </section>
+  </main>
+  <footer>
+    Opracował: Damian Szymczyk
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
